@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>source</title>
+    <style>
+        .black 
+        {
+            display: inline-block;
+            background-color: black;
+            width: 100px;
+            height: 100px;
+        }
+        .white
+        {
+            display: inline-block;
+            background-color: white;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="board">
+    <!-- 
+      <span class="black"></span>
+      <span class="white"></span>
+      <span class="black"></span>
+      <span class="white"></span>
+      <span class="white"></span>
+      <span class="black"></span>
+      <span class="white"></span>
+      <span class="black"></span>
+      <span class="black"></span>
+      <span class="white"></span>
+      <span class="black"></span>
+      <span class="white"></span>
+      <span class="white"></span>
+      <span class="black"></span>
+      <span class="white"></span>
+      <span class="black"></span>
+       -->
+</div>
+<script>
+    var board = document.getElementById("board");
+    var tmp = '0';
+    var tmp2 = 'black';
+
+    for(var i=0; i<4; i++){
+        const br = document.createElement('br');
+        for(var j=0; j<4; j++){
+            const span = document.createElement('span');
+            if(((i%2)==1 && (j%2)==1) || ((i%2)==0 && (j%2)==0)) {
+                span.className = "black";
+                span.id = 4*i + j;
+                board.appendChild(span);
+            }
+            if((i%2)==1 && (j%2)==0 || (i%2)==0 && (j%2)==1) {
+                span.className = "white";
+                span.id = 4*i +j;
+                board.appendChild(span);
+            }
+            span.addEventListener('click', function() {
+                document.getElementById(tmp).style.backgroundColor = tmp2;
+                tmp = span.id;
+                tmp2 = span.className;
+                console.log(tmp2);
+                document.getElementById(tmp).style.backgroundColor = "red";
+            })
+        }
+        board.appendChild(br);
+    }
+    
+</script>
+</body>
+</html>
