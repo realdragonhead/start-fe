@@ -10,6 +10,7 @@ const $boxInfo = {
 };
 const $boxWidth = $boxInfo.right - $boxInfo.left;
 const $boxHeight = $boxInfo.bottom - $boxInfo.top;
+let intervalTime = 1200;
 let Xorigin = 0, Yorigin = 0;
 let life = 10;
 let score = 0;
