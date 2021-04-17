@@ -1,0 +1,23 @@
+{
+  "name": "start-fe",
+  "version": "1.0.0",
+  "description": "```bash start-fe ├── 01 │   ├── app.js │   └── index.html ├── 02 │   ├── app.js │   └── index.html ├── 03 │   ├── app.js │   └── index.html ├── 04 │   ├── quiz1.html │   └── quiz2.html ├── 05 │   ├── quiz03 │   │   ├── quiz03.html │   │   └── quiz03.js │   └── quiz04 │       ├── quiz04.html │       └── quiz04.js ├── 06 │   ├── app.js │   ├── index.html │   ├── quiz05 │   │   ├── quiz05.html │   │   └── quiz5.js │   ├── quiz06 │   │   ├── quiz06.html │   │   └── quiz6.js │   └── quiz07 │       ├── quiz07.html │       └── quiz7.js └── README.md ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realdragonhead/start-fe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realdragonhead/start-fe/issues"
+  },
+  "homepage": "https://github.com/realdragonhead/start-fe#readme",
+  "devDependencies": {
+    "eslint": "^7.24.0"
+  }
+}
